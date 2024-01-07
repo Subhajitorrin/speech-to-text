@@ -1,35 +1,58 @@
 <!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External stylesheet link for styling the HTML content -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- External stylesheet link for Boxicons library -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Title of the HTML document displayed on the browser tab -->
     <title>Speech-to-Text</title>
 </head>
 
 <body>
+    <!-- Main container div for the entire content -->
     <div class="container">
+        <!-- Wrapper div for grouping content -->
         <div class="wrapper">
+            <!-- Heading div containing the main title of the application -->
             <div class="heading">
                 <h1>Speech To Text</h1>
             </div>
+
+            <!-- Output section div where the recognized speech will be displayed -->
             <div class="output-section" id="output"></div>
+
+            <!-- Button container div for holding action buttons -->
             <div class="btncontainer">
-                <button id="startButton">
-                    <p id="btntext">Start Recording</p>
-                    <i class='bx bx-microphone'></i>
+                <!-- Start Recording Button -->
+                <button id="startbtn">
+                    <!-- Paragraph for displaying the text inside the button -->
+                    <p id="start-btn-text">Start Recording</p>
+                    <!-- Boxicon for representing a microphone -->
+                    <i class='bx bx-microphone icon'></i>
                 </button>
+
+                <!-- Copy Button -->
                 <button id="copyButton">
+                    <!-- Text inside the copy button -->
                     Copy
+                    <!-- Boxicon for representing copying action -->
                     <i class='bx bx-copy'></i>
                 </button>
             </div>
         </div>
     </div>
 
+    <!-- External JavaScript file for handling dynamic behavior -->
     <script src="script.js"></script>
 </body>
 
